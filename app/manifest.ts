@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "مخبز أم علي المميز",
-    short_name: "مخبز أم علي",
+    name: "نظم للتقنية",
+    short_name: "  نظم للتقنية",
     description:
-      "منتجات مخبز أم علي نكهة البيت في كل لقمة",
+      "حلول أكاديمية، إبداعية ورقمية مرتبة حول احتياجك. ",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
