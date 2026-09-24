@@ -9,7 +9,7 @@ import { useEffect, useState ,useMemo} from "react";
 
 export const weddingData = {
   bride: "نهى",
-  groom: "يوسف",
+  groom: "يونس",
   families: "آل صبره و آل العكام",
   weddingDate: "2026-10-01",
   venue: "قاعة قصر اوركست - المحافظة ",
