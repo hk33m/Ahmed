@@ -273,7 +273,7 @@ export function WeddingIntro() {
         
 
         <RevealText>
-          <p className="font-serif text-lg tracking-wide text-[#5A1720] sm:text-xl">
+          <p className=" text-lg tracking-wide text-[#5A1720] sm:text-xl">
             {weddingData.families}
           </p>
         </RevealText>
@@ -306,7 +306,7 @@ export function WeddingIntro() {
           }}
           className="mt-6"
         >
-          <h1 className="font-serif text-4xl font-medium tracking-wide text-[#5A1720] sm:text-6xl">
+          <h1  className="name text-5xl font-medium tracking-wide text-[#5A1720] sm:text-6xl">
             {weddingData.bride}<br></br>
             <span className="mx-3 text-3xl font-light text-[#C8A96B]">
               &
@@ -651,21 +651,17 @@ function LocationIcon() {
 
 function MapPreview() {
   return (
-    <div className="relative h-48 overflow-hidden rounded-2xl border border-[#C8A96B]/25 bg-[#F3E8D5]">
-      <iframe
-  src="https://www.google.com/maps?q=13.9688395,44.1795565&hl=ar&z=17&output=embed"
-  width="100%"
-  height="450"
-  style={{ border: 0 }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-
-      <div className="absolute bottom-3 right-3 rounded-full border border-[#C8A96B]/30 bg-[#FFFDF8]/90 px-3 py-1.5 text-[10px] text-[#5A1720] backdrop-blur-sm">
-        موقع الاحتفال
-      </div>
-    </div>
+    <div className="overflow-hidden rounded-2xl border border-[#ead9c0]">
+  <iframe
+    src="https://www.google.com/maps?q=13.9688395,44.1795565&hl=ar&z=19&output=embed"
+    width="100%"
+    height="180"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
   );
 }
 
