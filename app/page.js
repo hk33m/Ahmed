@@ -15,7 +15,7 @@ import WeddingSections, {
 export default function WeddingInvitation() {
   const [intro, setIntro] = useState(true);
   const [stage, setStage] = useState("opening");
-  const [showScrollHint, setShowScrollHint] = useState(true);
+ 
  
 
   const videoRef = useRef(null);
@@ -48,17 +48,7 @@ export default function WeddingInvitation() {
   };
 }, []);
 
-useEffect(() => {
-  const handleScroll = () => {
-    setShowScrollHint(window.scrollY < 80);
-  };
 
-  window.addEventListener("scroll", handleScroll);
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
 
   const openInvitation = async () => {
     const video = videoRef.current;
@@ -322,37 +312,7 @@ transition={{
     }}
     className="min-h-screen bg-[#F8F0E3]"
   >
-    {showScrollHint && (
-  <motion.div
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: [0, 6, 0] }}
-    transition={{
-      opacity: { duration: 0.6 },
-      y: {
-        duration: 1.5,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    }}
-    className="fixed bottom-30 left-1/2 z-[90] -translate-x-1/2 text-center"
-  >
-    <p className="text-xs tracking-[0.2em] text-[#5A1720]/75">
-      مرر للأسفل
-    </p>
-
-    <div className="mx-auto mt-2 flex h-8 w-5 items-start justify-center rounded-full border border-[#C8A96B]/70 pt-1">
-      <motion.span
-        animate={{ y: [0, 7, 0] }}
-        transition={{
-          duration: 1.2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="h-1.5 w-1.5 rounded-full bg-[#5A1720]"
-      />
-    </div>
-  </motion.div>
-)}
+  
      <FallingPetals />
     {/* صورة الدعوة الأصلية */}
     <div className="relative w-full overflow-hidden">

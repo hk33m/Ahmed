@@ -326,11 +326,60 @@ export function WeddingIntro() {
 ========================================================= */
 
 export function WelcomeSection() {
+     const [showScrollHint, setShowScrollHint] = useState(true);
+
+     useEffect(() => {
+  const handleScroll = () => {
+    setShowScrollHint(window.scrollY < 80);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
   return (
     <section
       dir="rtl"
-      className="bg-[#FFFDF8] px-5 pt-30 pb-20 sm:px-8 sm:py-24 "
+      className="bg-[#FFFDF8] px-5  pb-20 sm:px-8 sm:py-24 "
     >
+          
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: [0, 6, 0] }}
+    transition={{
+      opacity: { duration: 0.6 },
+      y: {
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+    }}
+    className=" text-center py-10"
+  >
+    {showScrollHint && (
+        <>
+    <p className="text-[14px] tracking-[0.2em] text-[#5A1720]/75">
+      مرر للأسفل
+    </p>
+
+    <div className="mx-auto mt-2 flex h-8 w-5 items-start justify-center rounded-full border border-[#C8A96B]/70 pt-1">
+      <motion.span
+        animate={{ y: [0, 7, 0] }}
+        transition={{
+          duration: 1.2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="h-1.5 w-1.5 rounded-full bg-[#5A1720]"
+      />
+    </div>
+    </>
+    )}
+  </motion.div>
+
         <div className="relative">
   <img
     src="/images/flowers.webp"
