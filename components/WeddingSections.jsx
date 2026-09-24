@@ -330,7 +330,7 @@ export function WelcomeSection() {
 
      useEffect(() => {
   const handleScroll = () => {
-    setShowScrollHint(window.scrollY < 80);
+    setShowScrollHint(window.scrollY < 300);
   };
 
   window.addEventListener("scroll", handleScroll);
@@ -357,7 +357,7 @@ export function WelcomeSection() {
         ease: "easeInOut",
       },
     }}
-    className=" text-center py-10"
+    className=" text-center pt-3 pb-10"
   >
     {showScrollHint && (
         <>
