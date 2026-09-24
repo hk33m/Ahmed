@@ -329,7 +329,7 @@ export function WelcomeSection() {
   return (
     <section
       dir="rtl"
-      className="bg-[#FFFDF8] px-5 py-20 sm:px-8 sm:py-24"
+      className="bg-[#FFFDF8] px-5 pt-30 pb-20 sm:px-8 sm:py-24 "
     >
         <div className="relative">
   <img
