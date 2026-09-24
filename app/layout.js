@@ -4,10 +4,31 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: 'نظم للتقنية | كل احتياج في نظام واحد',
-  description: 'حلول أكاديمية، إبداعية ورقمية مرتبة حول احتياجك.',
-  generator: 'v0.app',
-}
+  title: "دعوة زفاف نهى و يونس",
+  description: "بداية أجمل حكايتنا 🤍",
+
+  openGraph: {
+    title: "دعوة زفاف نهى و يونس",
+    description: "بداية أجمل حكايتنا 🤍",
+    type: "website",
+    locale: "ar_YE",
+    images: [
+      {
+        url: "/og-wedding.png",
+        width: 1200,
+        height: 630,
+        alt: "دعوة زفاف نهى و يونس",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "دعوة زفاف نهى و يونس",
+    description: "بداية أجمل حكايتنا 🤍",
+    images: ["/og-wedding.png"],
+  },
+};
 
 export default function RootLayout({ children }) {
   return (

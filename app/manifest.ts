@@ -2,15 +2,15 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "نظم للتقنية",
-    short_name: "  نظم للتقنية",
-    description:
-      "حلول أكاديمية، إبداعية ورقمية مرتبة حول احتياجك. ",
+    name: "دعوة زفاف نهى و يونس",
+    short_name: "دعوة زفاف",
+    description: "دعوة حفل زفاف نهى و يونس",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
     theme_color: "#4A2C11",
     orientation: "portrait",
+
     icons: [
       {
         src: "/android-chrome-192x192.png",
