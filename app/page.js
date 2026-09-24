@@ -26,6 +26,25 @@ export default function WeddingInvitation() {
     }, 1800);
 
 
+    useEffect(() => {
+  const handleVisibilityChange = () => {
+    if (document.hidden) {
+      audioRef.current?.pause();
+    }
+  };
+
+  const handlePageHide = () => {
+    audioRef.current?.pause();
+  };
+
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  window.addEventListener("pagehide", handlePageHide);
+
+  return () => {
+    document.removeEventListener("visibilitychange", handleVisibilityChange);
+    window.removeEventListener("pagehide", handlePageHide);
+  };
+}, []);
     
     return () => clearTimeout(timer);
   }, []);
