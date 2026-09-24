@@ -333,7 +333,7 @@ export function WelcomeSection() {
     >
         <div className="relative">
   <img
-    src="/images/flowers.png"
+    src="/images/flowers.webp"
     alt=""
     className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 md:w-44 z-20 pointer-events-none"
   />
@@ -509,7 +509,7 @@ export function CountdownSection() {
       <div className="mx-auto max-w-xl">
        <div className="relative">
   <img
-    src="/images/fs.png"
+    src="/images/fs.webp"
     alt=""
     className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 md:w-44 z-20 pointer-events-none"
   />

@@ -25,6 +25,8 @@ export default function WeddingInvitation() {
       setIntro(false);
     }, 1800);
 
+
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -217,7 +219,7 @@ export default function WeddingInvitation() {
 
               <video
                 ref={videoRef}
-                src="/videos/envelope.mp4"
+                src="/videos/envelope.webm"
                 playsInline
                 preload="auto"
                 onEnded={handleVideoEnd}
@@ -301,7 +303,7 @@ export default function WeddingInvitation() {
     <div className="relative w-full overflow-hidden">
   <div className="flex w-full justify-center">
     <motion.img
-      src="/images/invitation.png"
+      src="/images/invitation.webp"
       alt="دعوة زفاف"
       initial={{
         opacity: 0,

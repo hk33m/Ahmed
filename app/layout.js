@@ -14,7 +14,7 @@ export const metadata = {
     locale: "ar_YE",
     images: [
       {
-        url: "/og-wedding.png",
+        url: "/og-wedding.webp",
         width: 1200,
         height: 630,
         alt: "دعوة زفاف نهى و يونس",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "دعوة زفاف نهى و يونس",
     description: "بداية أجمل حكايتنا 🤍",
-    images: ["/og-wedding.png"],
+    images: ["/og-wedding.webp"],
   },
 };
 
