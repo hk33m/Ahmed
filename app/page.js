@@ -24,9 +24,10 @@ export default function WeddingInvitation() {
     const timer = setTimeout(() => {
       setIntro(false);
     }, 1800);
-
-
-    useEffect(() => {
+    
+    return () => clearTimeout(timer);
+  }, []);
+  useEffect(() => {
   const handleVisibilityChange = () => {
     if (document.hidden) {
       audioRef.current?.pause();
@@ -45,9 +46,6 @@ export default function WeddingInvitation() {
     window.removeEventListener("pagehide", handlePageHide);
   };
 }, []);
-    
-    return () => clearTimeout(timer);
-  }, []);
 
   const openInvitation = async () => {
     const video = videoRef.current;
