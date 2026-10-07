@@ -8,10 +8,10 @@ import { useEffect, useState ,useMemo} from "react";
 ========================================================= */
 
 export const weddingData = {
-  bride: "دعاء",
-  groom: "إبراهيم",
-  families :"آل الورافي و آل الأسد",
-  weddingDate: "2026-10-14",
+  bride: "نهى",
+  groom: "يونس",
+  families: "آل صبره و آل العكام",
+  weddingDate: "2026-10-01",
   venue: "قاعة قصر اوركست - المحافظة ",
   venueMapUrl: "https://maps.app.goo.gl/nrJBQ8uVJxMezjmR9",
 };
